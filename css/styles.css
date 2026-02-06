@@ -1,11 +1,64 @@
 p {
-    font-family: "DM Serif Text", serif;
+  font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Cardo", serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cardo", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #dd4e4e;
+  padding: 40px;
+}
+
+.menu {
+  max-width: 900px;
+  margin: auto;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-details h3 {
+  font-size: 22px;
+}
+
+.desc {
+  margin: 10px 0;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c7a2c;
+}
+
+.nutrition {
+  font-size: 14px;
+  color: #444;
 }
