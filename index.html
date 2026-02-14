@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&display=swap"
     rel="stylesheet">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>City Sports Players Menu</title>
 </head>
 
@@ -20,137 +21,358 @@
     </header>
 
     <!-- ITEM 1 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/grilled-chicken-power-bowl.png" alt="Grilled Chicken Power Bowl" width="300" height="300">
+    <article class="menu-item" data-id="item-1" data-ingredients="Grilled chicken, quinoa, roasted vegetables, herb dressing">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/grilled-chicken-power-bowl.png" alt="Grilled Chicken Power Bowl" width="300" height="300">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Grilled Chicken Power Bowl</h3>
         <p class="desc">Grilled chicken, quinoa, roasted vegetables, and light herb dressing.</p>
         <p class="price">$12.99</p>
         <p class="nutrition">520 calories • 42g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- ITEM 2 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/salmon-performance-plate.png" alt="Salmon Performance Plate" width="300" height="300">
+    <article class="menu-item" data-id="item-2" data-ingredients="Seared salmon, brown rice, steamed broccoli, lemon garlic sauce">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/salmon-performance-plate.png" alt="Salmon Performance Plate" width="300" height="300">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Salmon Performance Plate</h3>
         <p class="desc">Seared salmon, brown rice, steamed broccoli, lemon garlic sauce.</p>
         <p class="price">$14.50</p>
         <p class="nutrition">610 calories • 45g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- ITEM 3 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/turkey-avocado-wrap.png" alt="Turkey Avocado Wrap">
+    <article class="menu-item" data-id="item-3" data-ingredients="Whole wheat wrap, turkey, avocado, spinach, protein spread">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/turkey-avocado-wrap.png" alt="Turkey Avocado Wrap">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Turkey Avocado Wrap</h3>
         <p class="desc">Whole wheat wrap with turkey, avocado, spinach, and protein spread.</p>
         <p class="price">$10.25</p>
         <p class="nutrition">480 calories • 36g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- ITEM 4 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/beef-muscle-burger.png" alt="Beef Muscle Burger">
+    <article class="menu-item" data-id="item-4" data-ingredients="Lean beef patty, whole grain bun, lettuce, tomato, sports sauce">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/beef-muscle-burger.png" alt="Beef Muscle Burger">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Beef Muscle Burger</h3>
         <p class="desc">Lean beef patty, whole grain bun, lettuce, tomato, and sports sauce.</p>
         <p class="price">$13.00</p>
         <p class="nutrition">670 calories • 48g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- ITEM 5 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/egg-white-fitness-omelet.png" alt="Egg White Fitness Omelet">
+    <article class="menu-item" data-id="item-5" data-ingredients="Egg whites, spinach, peppers, mushrooms, low-fat cheese">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/egg-white-fitness-omelet.png" alt="Egg White Fitness Omelet">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Egg White Fitness Omelet</h3>
         <p class="desc">Egg whites with spinach, peppers, mushrooms, and low-fat cheese.</p>
         <p class="price">$9.75</p>
         <p class="nutrition">390 calories • 34g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- ITEM 6 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/protein-pancake-stack.png" alt="Protein Pancake Stack">
+    <article class="menu-item" data-id="item-6" data-ingredients="Oat pancakes, whey protein, berries, honey drizzle">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/protein-pancake-stack.png" alt="Protein Pancake Stack">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Protein Pancake Stack</h3>
         <p class="desc">Oat pancakes with whey protein, berries, and honey drizzle.</p>
         <p class="price">$11.50</p>
         <p class="nutrition">550 calories • 40g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- ITEM 7 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/tuna-energy-salad.png" alt="Tuna Energy Salad">
+    <article class="menu-item" data-id="item-7" data-ingredients="Fresh tuna, mixed greens, chickpeas, olive oil, lemon">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/tuna-energy-salad.png" alt="Tuna Energy Salad">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Tuna Energy Salad</h3>
         <p class="desc">Fresh tuna, mixed greens, chickpeas, olive oil, and lemon.</p>
         <p class="price">$12.25</p>
         <p class="nutrition">470 calories • 43g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- BEVERAGE 1 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/chocolate-protein-shake.png" alt="Chocolate Protein Shake">
+    <article class="menu-item" data-id="item-8" data-ingredients="Whey protein, almond milk, cocoa, banana">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/chocolate-protein-shake.png" alt="Chocolate Protein Shake">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Chocolate Protein Shake</h3>
         <p class="desc">Whey protein, almond milk, cocoa, and banana for recovery.</p>
         <p class="price">$6.50</p>
         <p class="nutrition">320 calories • 30g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- BEVERAGE 2 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/green-recovery-smoothie.png" alt="Green Recovery Smoothie">
+    <article class="menu-item" data-id="item-9" data-ingredients="Spinach, pineapple, plant protein, coconut water, ginger">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/green-recovery-smoothie.png" alt="Green Recovery Smoothie">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Green Recovery Smoothie</h3>
         <p class="desc">Spinach, pineapple, plant protein, coconut water, and ginger.</p>
         <p class="price">$6.75</p>
         <p class="nutrition">290 calories • 22g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
     <!-- BEVERAGE 3 -->
-    <article class="menu-item">
-      <figure>
-        <img src="img/electrolyte-hydration-drink.png" alt="Electrolyte Hydration Drink">
+    <article class="menu-item" data-id="item-10" data-ingredients="Low-sugar electrolyte blend for hydration and minerals">
+      <figure class="flip-card" tabindex="0" role="button" aria-pressed="false">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/electrolyte-hydration-drink.png" alt="Electrolyte Hydration Drink">
+          </div>
+          <div class="flip-card-back">
+            <div class="ingredients"><strong>Ingredients</strong><ul></ul></div>
+            <div class="order-controls">
+              <button class="order-btn">Order</button>
+              <span class="order-count">Ordered: <span class="count">0</span></span>
+            </div>
+          </div>
+        </div>
       </figure>
       <section class="menu-details">
         <h3>Electrolyte Hydration Drink</h3>
         <p class="desc">Low-sugar electrolyte drink for hydration and muscle performance.</p>
         <p class="price">$4.50</p>
         <p class="nutrition">120 calories • 5g protein</p>
+        <div class="reviews">
+          <div class="rating-summary">Rating: <span class="avg-rating">—</span> (<span class="reviews-count">0</span>)</div>
+          <button class="toggle-review-form">Add Review</button>
+          <form class="review-form" style="display:none; margin-top:8px;">
+            <input name="name" placeholder="Your name" required style="width:100%; padding:6px; margin-bottom:6px;" />
+            <select name="rating" required style="width:100%; padding:6px; margin-bottom:6px;"><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select>
+            <textarea name="comment" placeholder="Write a review" required style="width:100%; padding:6px; margin-bottom:6px;"></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <ul class="reviews-list" style="margin-top:8px; list-style:none; padding:0;"></ul>
+        </div>
       </section>
     </article>
 
   </main>
 
+  <script src="js/main.js"></script>
 </body>
 
 </html>
